@@ -1,0 +1,114 @@
+.sign-wrap {
+  .center-box {
+    background-color: #f7fff7;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 0 0 5px #9c9c9c;
+    .userimg-wrap {
+      text-align: center;
+      padding-bottom: 15px;
+      position: relative;
+      width: 100px;
+      height: 100px;
+      box-shadow: 0 0 5px #9c9c9c;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100px;
+        height: 100px;
+        box-shadow: 0 0 5px #9c9c9c;
+        display: inline-block;
+        border-radius: 50%;
+      }
+    }
+    .upload-text {
+      width: 100px;
+      height: 35px;
+      background: #acd67a;
+      position: absolute;
+      padding-top: 5px;
+      top: 66px;
+      left: 50%;
+      transform: translateX(-50%);
+      cursor: pointer;
+      input {
+        width: 100px;
+        height: 35px;
+        background: #acd67a;
+        position: absolute;
+        padding-top: 5px;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+    .form-opt {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 12px;
+      label {
+        font-size: 16px;
+        display: inline-block;
+        padding-bottom: 5px;
+      }
+      input {
+        background: #acd67a;
+        border: none;
+        height: 34px;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 16px;
+      }
+      input:focus {
+        border: 1px solid #000;
+      }
+    }
+    .sign-btn {
+      text-align: center;
+      padding-top: 10px;
+      button {
+        width: 170px;
+        height: 40px;
+        background: #4a8700;
+        border: none;
+        color: #fff;
+        font-size: 24px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+    }
+    .user-pass, .confirm-pass {
+      position: relative;
+      .icon-box {
+        cursor: pointer;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        right: 10px;
+        bottom: 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+    .hide-icon {
+      display: none;
+    }
+    .login-wrap {
+      margin-top: 25px;
+      font-size: 18px;
+      padding-bottom: 10px;
+      a {
+        color: #4a8700;
+        text-decoration: underline;
+      }
+    }
+  }
+}
