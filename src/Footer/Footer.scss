@@ -1,0 +1,31 @@
+.footer-wrap {
+  width: 100%;
+  max-width: 2000px;
+  background-color: #4a8700;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto;
+  padding-top: 30px;
+  margin-top: 30px;
+  img {
+    width: 200px;
+  }
+  .gg-call {
+    font-size: 25px;
+    padding-top: 14px;
+    padding-bottom: 12px;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+  .gg-mail {
+    font-size: 18px;
+    padding-top: 4px;
+    padding-bottom: 12px;
+    a {
+      color: #ffffff;
+      text-decoration: none;
+    }
+  }
+}

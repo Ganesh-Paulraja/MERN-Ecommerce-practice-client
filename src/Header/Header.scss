@@ -16,6 +16,13 @@ body {
   padding: 8px 12px 3px;
   align-items: center;
   box-shadow: 2px 2px 8px #9c9c9c;
+  .gg-menu {
+    display: none;
+    padding-right: 20px;
+    img {
+      width: 38px;
+    }
+  }
   ul {
     display: flex;
     margin-left: auto;
@@ -93,10 +100,13 @@ body {
           padding: 10px 6px;
           border-bottom: 1px solid #c7c7c7;
           font-size: 16px;
+          p {
+            cursor: pointer;
+          }
         }
         li:hover {
           background-color: #4a8700;
-          a {
+          a, p {
             color: #fff;
           }
         }
@@ -111,5 +121,69 @@ body {
   }
   .logo-wrap img {
     width: 120px;
+  }
+  @media screen and (max-width: 700px) {
+    .gg-desk {
+      display: none;
+    }
+    .gg-menu {
+      display: block;
+    }
+  }
+} 
+.mbile-nav-wrap {
+  display: none;
+  .mob-overlay {
+    width: 100vw;
+    height: 100vh;
+    background: #00000087;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  ul {
+    padding-top: 35px;
+    a {
+      display: block;
+      width: 100%;
+      border-bottom: 1px solid #4a8700;
+      text-decoration: none;
+      color: #000000;
+      padding: 10px 0;
+      padding-left: 12px;
+    }
+    a.active {
+      color: #4a8700;
+    }
+  }
+  .mob-wrap {
+    width: 250px;
+    background: #fff;
+    height: 100vh;
+    position: fixed;
+    left: -260px;
+    z-index: 999;
+    transition: 0.3s;
+    top: 0;
+  }
+  .gg-close {
+    position: absolute;
+    right: 12px;
+    width: 18px;
+    top: 8px;
+    cursor: pointer;
+  }
+  @media screen and (max-width: 700px) {
+    display: block;
+  }
+}
+.mbile-nav-wrap.gg-active {
+  .mob-overlay {
+    display: block;
+  }
+  .mob-wrap {
+    left: 0;
   }
 }

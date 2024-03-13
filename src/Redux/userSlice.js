@@ -20,8 +20,17 @@ export const userSlice = createSlice({
       state.value = action.payload
       console.log(action)
     },
+    logoutRedux : (state, action) => {
+      state.value = {
+        _id: '',
+        firstName: '',
+        lastName: '',
+        email: '',
+        image: '',
+      }
+    }
   },
 });
 
-export const { loginRedux } = userSlice.actions;
+export const { loginRedux, logoutRedux } = userSlice.actions;
 export default userSlice.reducer;

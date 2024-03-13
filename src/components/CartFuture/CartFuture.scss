@@ -1,0 +1,49 @@
+.product-card-wrap {
+    width: 185px;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0px 0px 7px #53725b;
+    background-color: white;
+    margin: 8px 0;
+    border-radius: 7px;
+    min-height: 260px;
+    .pro-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 152px;
+        img {
+            width: 100%;
+            max-height: 150px;
+        }
+    }
+    .pro-name {
+        font-size: 17px;
+        padding-top: 5px;
+        padding-bottom: 8px;
+    }
+    .price {
+        font-size: 18px;
+        font-weight: 600;
+        color: #4a8700;
+    }
+    button {
+        background: #4a8700;
+        border: none;
+        outline: none;
+        font-size: 18px;
+        color: #fff;
+        display: block;
+        margin: 0 auto;
+        padding: 4px 20px;
+        cursor: pointer;
+        margin-top: 5px;
+    }
+    button:hover {
+        background-color: #6e8d48;
+    }
+    a {
+        text-decoration: none;
+        color: #000;
+    }
+}

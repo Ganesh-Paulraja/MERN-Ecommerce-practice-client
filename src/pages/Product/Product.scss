@@ -1,0 +1,138 @@
+.product-wrap {
+  max-width: 1600px;
+  margin: 0 auto;
+  h2 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-bottom: 20px;
+  }
+  .product-box {
+    .pro-img {
+      width: 400px;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 20px;
+      img {
+        width: 100%;
+        max-height: 100%;
+      }
+    }
+    .product-right {
+      margin-left: 20px;
+      padding-right: 25px;
+    }
+    .pro-name {
+      font-size: 40px;
+      padding-top: 10px;
+      padding-bottom: 6px;
+      text-transform: capitalize;
+    }
+    .pro-cat {
+      font-size: 25px;
+      color: gray;
+      padding-bottom: 6px;
+    }
+    .pro-price {
+      font-size: 25px;
+      font-weight: 600;
+      color: #4a8700;
+      padding-top: 7px;
+    }
+    .pro-desc {
+      font-size: 16px;
+      line-height: 20px;
+      padding-top: 10px;
+      padding-bottom: 12px;
+      padding-right: 20px;
+    }
+    .pro-cta {
+      button {
+        background: #4a8700;
+        border: none;
+        outline: none;
+        font-size: 20px;
+        color: #fff;
+        width: 100%;
+        height: 45px;
+        display: block;
+        cursor: pointer;
+        margin-top: 5px;
+      }
+      button:hover {
+        background-color: #6e8d48;
+      }
+    }
+  }
+  .product-box {
+    box-shadow: 1px 1px 6px #969696;
+    margin: 15px auto 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 900px;
+  }
+  
+  
+  .pay-wrap {
+    text-align: center;
+  }
+  .gg-social {
+    display: flex;
+    margin-bottom: 12px;
+    .gg-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+    }
+  }
+  .gg-view, .gg-bought {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .gg-count {
+      color: #4a8700;
+      font-weight: 600;
+      font-size: 18px;
+      display: inline-block;
+      padding-right: 5px;
+    }
+  }
+  .gg-view img {
+    width: 25px;
+  }
+  .gg-bought {
+    margin-left: 25px;
+  }
+  @media screen and (max-width: 920px) {
+    padding: 0 10px;
+    .product-box {
+      max-width: 100%;
+      flex-direction: column;
+      .pro-name {
+        font-size: 25px;
+      }
+      .pro-img {
+        max-width: 400px;
+        width: 100%;
+        height: 100%;
+        margin-left: 0;
+      }
+    }
+    .pay-wrap img {
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 420px) {
+    .gg-social {
+      flex-direction: column;
+      .gg-bought {
+        margin-left: 0;
+        padding-top: 6px;
+      }
+    }
+  }
+}

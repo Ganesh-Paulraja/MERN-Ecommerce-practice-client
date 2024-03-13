@@ -1,0 +1,15 @@
+.product-section {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #111;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    img {
+        width: 100%;
+    }
+}
+.pro-flex {
+    display: flex;
+    flex-wrap: wrap;
+}

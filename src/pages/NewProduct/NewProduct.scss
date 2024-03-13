@@ -1,0 +1,72 @@
+$bg-color: #f7fff7;
+.newProduct-wrap {
+    background-color: #acd67a;
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 15px;
+    box-shadow: 0 0 5px #9c9c9c;
+    .opt-box {
+        label {
+            display: block;
+            padding-bottom: 4px;
+            padding-top: 10px;
+        }
+        input {
+            background: $bg-color;
+            border: none;
+            height: 34px;
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            display: block;
+            width: 100%;
+        }
+        select {
+            display: block;
+            width: 100%;
+            height: 32px;
+            background: $bg-color;
+            font-size: 16px;
+        }
+        textarea {
+            width: 100%;
+            padding: 5px;
+        }
+        .img-wrap {
+            width: 100%;
+            height: 140px;
+            background: #f7fff7;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            .upload-img {
+                width: 60px;;
+            }
+            .product-img {
+                height: 100%;
+            }
+        }
+        
+    }
+    .product-img-none {
+        display: none;
+    }
+    .submit-wrap{
+        margin-top: 5px;
+        button {
+            width: 100%;
+            background-color: #4a8700;
+            border: none;
+            color: #fff;
+            font-size: 20px;
+            text-transform: uppercase;
+            padding: 8px 0;
+            cursor: pointer;
+        }
+    }
+    .upload-input {
+
+    }
+}
