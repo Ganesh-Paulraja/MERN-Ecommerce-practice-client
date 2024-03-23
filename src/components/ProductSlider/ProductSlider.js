@@ -3,9 +3,11 @@ import './ProductSlider.scss'
 import leftArrow from '../../Images/home/leftarrow.svg';
 import rightArrow from '../../Images/home/rightarrow.svg';
 import CartFuture from '../CartFuture/CartFuture';
+//-----swiper ----------//
 import 'swiper/swiper.min.css'; 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
+//-------------------------------------------
 
 // npm i swiper swiper-react
 
@@ -29,6 +31,7 @@ export default function ProductSlider({productList, id}) {
   useEffect(() => {
     setSwiperKey((prevKey) => prevKey + 1);
   }, [productList]);
+  //-------------swiper--------------------------------
   const breakpoints = {
     50: {
       slidesPerView: 1,
@@ -49,6 +52,7 @@ export default function ProductSlider({productList, id}) {
       slidesPerView: 6,
     },
   };
+
   return (
     <div className={`slider-wrap slider-wrap-${id}`}>
       <Swiper
