@@ -7,6 +7,8 @@ import 'swiper/swiper.min.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
 
+// npm i swiper swiper-react
+
 export default function ProductSlider({productList, id}) {
   const [swiperKey, setSwiperKey] = useState(0);
   const swiperRef = useRef(null);
