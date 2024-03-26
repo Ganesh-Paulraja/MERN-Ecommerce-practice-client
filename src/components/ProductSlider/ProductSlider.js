@@ -10,6 +10,7 @@ import { Navigation } from 'swiper';
 //-------------------------------------------
 
 // npm i swiper swiper-react
+//npm install swiper@^9.3.2 swiper-react@^1.0.0
 
 export default function ProductSlider({productList, id}) {
   const [swiperKey, setSwiperKey] = useState(0);
